@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
@@ -10,7 +9,7 @@
     --cor-primaria-escura: #C63072;
     --background-degrade: rgb(239, 109, 171), linear-gradient(90deg, rgba(239, 109, 171, 1) 0%, rgba(109, 173, 239, 1) 100%);
     --fonte-texto: "Poppins", sans-serif;
-    --fonte-titulo:"Abril Fatface", serif;
+    --fonte-titulo: "Abril Fatface", serif;
 
 }
 
@@ -19,8 +18,6 @@ body {
     text-align: justify;
     background: var(--cor-primaria-escura);
     font-family: var(--fonte-texto)
-
-
 }
 
 h2 {
@@ -30,26 +27,37 @@ h2 {
     font-family: var(--fonte-titulo);
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: end;
 
 }
 
-.nav-item{
+.nav-item {
     padding: 2rem;
-    
+
 }
 
-.nav-link{
+.nav-link {
     color: aliceblue;
     text-decoration: none;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--cor-secundaroa);
     text-decoration: none;
+}
+
+/* media celular nav  */
+
+@media(max-width: 480px) {
+
+    .nav-item {
+        padding: 1rem;
+        font-size: 0.8rem;
+    
+    }
 }
 
 .titulo {
@@ -65,12 +73,25 @@ h2 {
     text-align: center;
     font-size: 3rem;
     font-family: var(--fonte-titulo);
-    
+
 
 }
 
 .titulo__img {
     max-height: 30vh;
+}
+
+/* media celular  */
+
+@media(max-width: 480px) {
+
+    .titulo__nome {
+        font-size: 1.5rem;
+    }
+
+    .titulo__img {
+        max-height: 20vh;
+    }
 }
 
 
@@ -86,10 +107,11 @@ h2 {
 
 }
 
-.contato__titulo{
+.contato__titulo {
     text-align: center;
     color: aliceblue;
 }
+
 .contato__link {
     border-radius: 1.5rem;
     text-align: center;
@@ -149,32 +171,31 @@ h2 {
 }
 
 
-.contato__link:hover{
+.contato__link:hover {
     color: var(--cor-primaria-escura);
 }
 
-.about{
-    border: solid #6DADEF 0.2rem ;
+.about {
+    border: solid #6DADEF 0.2rem;
     border-radius: 1rem;
     margin: 2rem;
 }
 
-.about__titulo{
+.about__titulo {
     text-align: center;
     color: aliceblue;
 }
 
-.about__paragrafo{
-    padding: 0rem 1rem 1rem 1rem; /* top | right | bottom | left */
-    line-height:20px;
+.about__paragrafo {
+    padding: 0rem 1rem 1rem 1rem;
+    /* top | right | bottom | left */
+    line-height: 20px;
     font-size: 1.2rem;
 }
 
-.skills{
+.skills {}
 
-}
-
-.skills__completa{
+.skills__completa {
     margin: 2rem;
     display: flex;
     flex-direction: row;
@@ -187,40 +208,56 @@ h2 {
 
 
 .skills__circulo {
-    
+
     text-align: center;
     background: linear-gradient(271deg, #ef6dab, #6dadef);
     border-radius: 50%;
     width: 200px;
     height: 200px;
- 
-    
+
+
 }
 
-.skills__nome{
+.skills__nome {
     color: aliceblue;
     text-align: center;
-    line-height: 200px;  /* para centralizar no circulo, usa o valor = ao valor do circulo*/
-    
-  
+    line-height: 200px;
+    /* para centralizar no circulo, usa o valor = ao valor do circulo*/
+
+
 }
 
-.skills__nome:hover{
+.skills__nome:hover {
     color: var(--cor-primaria-escura);
 }
 
 
-.skills__titulo{
+.skills__titulo {
     text-align: center;
     color: aliceblue;
 }
 
-.formacao__titulo{
+/* media celular skill  */
+
+@media(max-width: 480px) {
+
+    .skills__circulo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills__nome{
+        line-height: 100px;
+    }
+}
+
+
+.formacao__titulo {
     text-align: center;
     color: aliceblue;
 }
 
-.formacao__cards{
+.formacao__cards {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -229,10 +266,10 @@ h2 {
     flex-wrap: wrap;
 }
 
-.formacao__card{
+.formacao__card {
     height: 8vh;
     text-align: center;
-    border:solid #6DADEF 2px;
+    border: solid #6DADEF 2px;
     border-radius: 1rem;
     padding: 1rem;
     line-height: 2vh;
@@ -240,15 +277,9 @@ h2 {
 
 }
 
-.rodape{
+.rodape {
     background: linear-gradient(271deg, #ef6dab, #6dadef);
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
 }
-
-
-
-
-
-
