@@ -168,7 +168,7 @@ h2 {
 @media(max-width: 480px) {
 
     .titulo__nome {
-        font-size: 1.5rem;
+        font-size: 1.4rem; !important
     }
 
     .titulo__img {
@@ -259,7 +259,7 @@ h2 {
 
 @media(max-width: 480px) {
     .contato__link {
-        font-size: 0.7rem;
+        font-size: 0.7rem; !important
 
     }
 }
@@ -337,7 +337,7 @@ h2 {
 
     .skills__nome {
         line-height: 100px;
-        font-size: 1rem;
+        font-size: 0.8rem !important;
     }
 }
 
@@ -393,7 +393,7 @@ h2 {
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 1rem !important;
         padding: 0;
 
     }
